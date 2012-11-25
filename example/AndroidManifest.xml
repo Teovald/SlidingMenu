@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.slidingmenu.example"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="2"
+    android:versionName="1.1" >
 
     <uses-sdk
-        android:minSdkVersion="4"
-        android:targetSdkVersion="14" />
+        android:minSdkVersion="7"
+        android:targetSdkVersion="16" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -24,6 +26,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".PropertiesActivity" />
+        <activity android:name=".LeftAndRightActivity" />
         <activity android:name=".anim.CustomScaleAnimation" />
         <activity android:name=".anim.CustomZoomAnimation" />
         <activity android:name=".anim.CustomRotateAnimation" />
@@ -36,6 +39,7 @@
         <activity
             android:name=".fragments.BirdActivity"
             android:theme="@style/Theme.Sherlock.Light.DarkActionBar" />
+        <activity android:name="com.crittercism.NotificationActivity"/>
     </application>
 
 </manifest>
