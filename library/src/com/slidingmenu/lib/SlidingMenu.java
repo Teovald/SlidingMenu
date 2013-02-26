@@ -717,6 +717,25 @@ public class SlidingMenu extends RelativeLayout {
 		}
 		mViewBehind.setTouchMode(i);
 	}
+	
+	/**
+	 * Set the touch detection threshold to use when touch mode = margin
+	 * @param touchModeMarginThreshold
+	 */
+	public void setTouchModeMarginThreshold(int touchModeMarginThreshold) {
+		mViewBehind.setMarginThreshold(touchModeMarginThreshold);
+	}
+	
+	/**
+	 * Gets the touch detection threshold to use when touch mode = margin
+	 * @return the touch detection threshold
+	 */
+	public int getTouchModeMarginThreshold() {
+		return mViewBehind.getMarginThreshold();
+	}
+
+
+
 
 	/**
 	 * Sets the shadow drawable.

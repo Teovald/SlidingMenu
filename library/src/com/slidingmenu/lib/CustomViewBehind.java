@@ -68,6 +68,14 @@ public class CustomViewBehind extends ViewGroup {
 	public View getContent() {
 		return mContent;
 	}
+	
+	public void setMarginThreshold(int marginThreshold) {
+	    mMarginThreshold = marginThreshold;
+	}
+
+	public int getMarginThreshold() {
+	    return mMarginThreshold;
+	}
 
 	/**
 	 * Sets the secondary (right) menu for use when setMode is called with SlidingMenu.LEFT_RIGHT.
